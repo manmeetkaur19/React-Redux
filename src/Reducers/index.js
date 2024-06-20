@@ -1,10 +1,11 @@
+// for only one main reducer that constains all reducers
+
+
+import change from "./example";
+
 import { combineReducers } from "redux";
-import {example} from './example';
-
-
-const rootReducer = combineReducers({                                     //rootreducer is a container that containes all reducers func.
-    example
-})
-
-
-export default rootReducer;
+const rootReducer = combineReducers({
+    change
+    // here we can add more reducers by putting comma
+});
+export default rootReducer;

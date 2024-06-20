@@ -1,15 +1,14 @@
 // Example reducer  object
-const initialState = {
-  value: 0
-};
+const initialState =0;
 
-const example = (state = initialState, action) => { 
+const change = (state = initialState, action) => { 
   switch (action.type) {
     case 'INCREMENT':return state + 1;                                                 //3 dotes replaces the current state with updated state
     case 'DECREMENT':return state - 1;
+    default : return state;
   }
    }
 
- export default example;
+ export default change ;
 
 
